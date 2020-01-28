@@ -1,1 +1,1 @@
-web:gunicorn; danielvaroli:app
+web: flask db upgrade; gunicorn danielvaroli:app
