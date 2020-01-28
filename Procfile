@@ -1,1 +1,1 @@
-web:gunicorn app:danielvaroli
+web:gunicorn danielvaroli:app
