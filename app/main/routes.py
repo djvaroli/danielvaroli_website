@@ -8,7 +8,7 @@ import os
 
 @bp.route('/', methods=['GET', 'POST'])
 def home():
-    link_names = ['About Me','Projects','Hobbys', 'Curriculum Vitae', 'Teaching', 'Contact']
+    link_names = ['About Me', 'Projects', 'Curriculum Vitae', 'Contact']
     links = [Link(link_names[i],i) for i in range(len(link_names))]
     form = ContactForm()
     if form.validate_on_submit():

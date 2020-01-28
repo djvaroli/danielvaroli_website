@@ -9,13 +9,13 @@ class Config(object):
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or \
         'sqlite:///' + os.path.join(basedir, 'app.db')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-    MAIL_SERVER = os.environ.get('MAIL_SERVER')
-    MAIL_PORT = int(os.environ.get('MAIL_PORT') or 25)
-    MAIL_USE_TLS = os.environ.get('MAIL_USE_TLS') is not None
-    MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
-    MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
+    MAIL_SERVER = 'smtp.googlemail.com' or os.environ.get('MAIL_SERVER')
+    MAIL_PORT = 587 or int(os.environ.get('MAIL_PORT') or 25)
+    MAIL_USE_TLS = 1 or os.environ.get('MAIL_USE_TLS') is not None
+    MAIL_USERNAME = 'moreathleticyou' or os.environ.get('MAIL_USERNAME')
+    MAIL_PASSWORD = 'Uranium 238' or os.environ.get('MAIL_PASSWORD')
     ADMINS = ['moreathleticyou@gmail.com','daniel.varoli@gmail.com']
     LOG_TO_STDOUT = os.environ.get('LOG_TO_STDOUT')
-    RECAPTCHA_PUBLIC_KEY = '6LdR0M8UAAAAABbKlXVR-hqAfkMm7W3ymdP5rjd3'
-    RECAPTCHA_PRIVATE_KEY = '6LdR0M8UAAAAALK18OH1zzOyAecqN3zro4RpZn57'
+    RECAPTCHA_PUBLIC_KEY = '6Le_mNMUAAAAAEddyecx8fYaDdcsPY8rSuYHGMiy'
+    RECAPTCHA_PRIVATE_KEY = '6Le_mNMUAAAAAKeuPH-9DQnO0Gk6SUSgiP8o9rtH'
     LANGUAGES = ['en']
