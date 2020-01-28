@@ -1,0 +1,22 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block title %}
+    Daniel Varoli
+{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/project_card.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/cv.css')}}">
+{% endblock %}
+
+{% block content %}
+    {% block app_content %}{% endblock %}
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+    <script type="text/javascript" src="http://creativecouple.github.com/jquery-timing/jquery-timing.min.js"></script>
+    <script src="{{ url_for('static', filename='js/scroll.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/text_animation.js') }}"></script>
+{% endblock %}

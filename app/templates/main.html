@@ -1,0 +1,22 @@
+{% extends 'header.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+    <div id="back-to-top-button"><a>Back to Top ^</a></div>
+    <div id="banner" style="background-image: url({{url_for('static', filename='img/tech.svg')}})">
+        <div id="header-menu">
+            {% for link in links %}
+                <a href="#{{link.link}}">{{link.name}}</a>
+            {% endfor %}
+        </div>
+    </div>
+
+    {% for link in links %}
+        <div id="{{ link.link }}" class="section {{ link.order }}">
+            <div class="section-content">
+                <h1>{{ link.name }}</h1>
+                {% include link.html %}
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}

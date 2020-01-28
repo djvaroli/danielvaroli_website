@@ -1,0 +1,55 @@
+#cv-flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-basis: auto;
+    justify-content: space-between;
+}
+
+#cv-wrapper {
+    position: relative;
+    max-height: 20em;
+    max-width: 15em;
+    overflow: hidden;
+    width: 45%;
+}
+
+#cv-side-text {
+    width: 45%;
+}
+
+#cv-wrapper img {
+    max-height: 20em;
+}
+
+.img-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+
+.cv-caption {
+    position: absolute;
+    width: 80%;
+    margin: 0 auto;
+    top: 35em;
+    transition: all 0.5s;
+    font-size: 0.6em;
+    color: #FEFFFF;
+    padding: 1em;
+}
+#cv-wrapper:hover {
+    cursor: pointer;
+}
+
+#cv-wrapper:hover .img-overlay {
+    background-color: #13134f70;
+}
+
+/*#cv-wrapper:hover .cv-caption {*/
+/*    top: 20%;*/
+/*}*/
+
