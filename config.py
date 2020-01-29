@@ -12,9 +12,9 @@ class Config(object):
     MAIL_SERVER = 'smtp.googlemail.com' or os.environ.get('MAIL_SERVER')
     MAIL_PORT = 587 or int(os.environ.get('MAIL_PORT') or 25)
     MAIL_USE_TLS = 1 or os.environ.get('MAIL_USE_TLS') is not None
-    MAIL_USERNAME = 'moreathleticyou' or os.environ.get('MAIL_USERNAME')
+    MAIL_USERNAME = 'varolidaniel0' or os.environ.get('MAIL_USERNAME')
     MAIL_PASSWORD = 'Uranium 238' or os.environ.get('MAIL_PASSWORD')
-    ADMINS = ['moreathleticyou@gmail.com','daniel.varoli@gmail.com']
+    ADMINS = ['varolidaniel0@gmail.com','daniel.varoli@gmail.com']
     LOG_TO_STDOUT = os.environ.get('LOG_TO_STDOUT')
     RECAPTCHA_PUBLIC_KEY = '6Le_mNMUAAAAAEddyecx8fYaDdcsPY8rSuYHGMiy'
     RECAPTCHA_PRIVATE_KEY = '6Le_mNMUAAAAAKeuPH-9DQnO0Gk6SUSgiP8o9rtH'

@@ -1,0 +1,10 @@
+{% extends 'header.html' %}
+
+{% block app_content %}
+    <div id="banner" style="background-image: url({{url_for('static', filename='img/tech.svg')}})">
+        <div id="form-submit-success-text">
+            Your message has been succesfully sent.<br>
+            Thank you very much for your interest, I will get back to your shortly.
+        </div>
+    </div>
+{% endblock %}

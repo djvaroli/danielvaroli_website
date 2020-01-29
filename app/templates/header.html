@@ -8,15 +8,26 @@
     <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
     <link rel="stylesheet" href="{{url_for('static', filename='css/project_card.css')}}">
     <link rel="stylesheet" href="{{url_for('static', filename='css/cv.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/form_submit_success.css')}}">
 {% endblock %}
 
 {% block content %}
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+            <div class="alert alert-info" role="alert">{{ message }}</div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
     {% block app_content %}{% endblock %}
 {% endblock %}
 
 {% block scripts %}
     {{ super() }}
+    <script src="{{ url_for('static', filename='js/window_load.js') }}"></script>
     <script type="text/javascript" src="http://creativecouple.github.com/jquery-timing/jquery-timing.min.js"></script>
     <script src="{{ url_for('static', filename='js/scroll.js') }}"></script>
     <script src="{{ url_for('static', filename='js/text_animation.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/form.js') }}"></script>
 {% endblock %}

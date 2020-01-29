@@ -11,15 +11,30 @@ def home():
     link_names = ['About Me', 'Projects', 'Curriculum Vitae', 'Contact']
     links = [Link(link_names[i],i) for i in range(len(link_names))]
     form = ContactForm()
+
     if form.validate_on_submit():
         name = form.name.data
         email = form.email.data
         message = form.message.data
         email = Email(name, email, message)
         send_contact_email(email)
-        flash('Thank you! We will get back to you shortly.')
+        flash('Thank you, I will get in touch with you shortly.')
         return redirect(url_for('main.home'))
+
     return render_template('main.html', form = form, links=links)
+
+# @bp.route('/send_form', methods=['GET','POST'])
+# def send_form():
+#     formData = request.args.getlist('formData')[0]
+#     print(formData.split('&&'))
+#     [token,name,email,message,recaptchaCode] = formData.split('&&')[:-1]
+#     email = Email(name, email, message)
+#     # send_contact_email(email)
+#     return url_for('main.home')
+
+# @bp.route('/form_submit')
+# def form_submit():
+#     return render_template('form_submitted.html')
 
 class Email():
     sender_name = ''

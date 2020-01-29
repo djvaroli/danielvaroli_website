@@ -57,12 +57,17 @@ h1 {
     padding-bottom: 0.5rem;
 }
 
+/*.normal-text {*/
+/*    position: relative;*/
+/*    left: -50%;*/
+/*    transition: all 0.5s;*/
+/*}*/
 .large-text {
     font-size: 4rem;
     color: #e14072;
     position: relative;
     top: 2rem;
-    transition: all 0.4s;
+    transition: all 0.5s;
 }
 .even {
     background-color: #e14072;
@@ -147,6 +152,7 @@ h1 {
 }
 
 #back-to-top-button {
+    z-index: 1000;
     position: fixed;
     bottom: -5rem;
     right: 2rem;
@@ -169,4 +175,21 @@ h1 {
 
 .rc-anchor-light.rc-anchor-normal {
     border: 2px solid #e14072;
+}
+
+.alert, .alert-info {
+    position: fixed;
+    top: 20%;
+    right: -50%;
+    font-size: 1.2em;
+    background-color: #57b96c;
+    padding: 1em;
+    border: 1px solid #13134f;
+    border-radius: 0.5em;
+    transition: all 0.5s;
+}
+
+.deactivated {
+    pointer-events: none;
+    background-color: #333;
 }

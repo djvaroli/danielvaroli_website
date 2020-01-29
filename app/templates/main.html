@@ -3,12 +3,14 @@
 
 {% block app_content %}
     <div id="back-to-top-button"><a>Back to Top ^</a></div>
+<!--    <div id="alerts">Thank you, I will get in touch with shortly.</div>-->
     <div id="banner" style="background-image: url({{url_for('static', filename='img/tech.svg')}})">
         <div id="header-menu">
             {% for link in links %}
                 <a href="#{{link.link}}">{{link.name}}</a>
             {% endfor %}
         </div>
+<!--        <div id="welcome">Welcome!</div>-->
     </div>
 
     {% for link in links %}

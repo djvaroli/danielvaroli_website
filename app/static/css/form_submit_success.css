@@ -1,0 +1,8 @@
+#form-submit-success-text {
+    display: inline-block;
+    padding: 1em;
+    color: #13134f;
+    font-size: 1.5em;
+    background-color: #FEFFFF;
+    border-radius: 2px;
+}
