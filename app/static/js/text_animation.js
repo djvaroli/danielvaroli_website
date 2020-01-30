@@ -8,11 +8,14 @@ $(document).ready(function () {
     var aboutMeFirstTextTop = aboutMe.find('.large-text:first-child').offset().top;
 
     var largeText = $('.large-text');
+
+    var projectCard = $('.project-card-wrapper');
     // var normalText = $('.normal-text');
 
     $(window).scroll(function () {
         var viewportHeight = $(window).height();
         var scroll = $(window).scrollTop();
+
 
         largeText.each($).wait(100, function () {
              if (0.98*(scroll + viewportHeight) >= $(this).offset().top) {
@@ -20,6 +23,13 @@ $(document).ready(function () {
              }
         });
     });
+
+    // function callback() {
+    //   setTimeout(function() {
+    //     $( "#effect:visible" ).removeAttr( "style" ).fadeOut();
+    //   }, 1000 );
+    // };
+
 });
             // var delay = 0;
             // $('#about_me  .large-text').each($).wait(200, function() {

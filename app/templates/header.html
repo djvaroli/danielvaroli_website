@@ -5,6 +5,7 @@
 {% endblock %}
 
 {% block styles %}
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css" />
     <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
     <link rel="stylesheet" href="{{url_for('static', filename='css/project_card.css')}}">
     <link rel="stylesheet" href="{{url_for('static', filename='css/cv.css')}}">
@@ -33,6 +34,7 @@
     {{ super() }}
     <script src="{{ url_for('static', filename='js/window_load.js') }}"></script>
     <script type="text/javascript" src="http://creativecouple.github.com/jquery-timing/jquery-timing.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
     <script src="{{ url_for('static', filename='js/scroll.js') }}"></script>
     <script src="{{ url_for('static', filename='js/text_animation.js') }}"></script>
     <script src="{{ url_for('static', filename='js/form.js') }}"></script>

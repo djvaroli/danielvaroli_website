@@ -3,10 +3,17 @@
   <div id="cv-wrapper">
     <img src="{{url_for('static', filename='img/cv.png')}}">
     <div class="img-overlay"></div>
-    <div class="cv-caption">To request my CV, feel free to contact me via the contact form below! Thank you very much for your interest!</div>
+    <div class="cv-caption">
+      <a href="{{ url_for('static',filename='files/daniel_varoli_resume_current.pdf') }}" download>Compact <i class="down"></i></a>
+      <a href="{{ url_for('static',filename='files/daniel_varoli_resume_current.pdf') }}" download>Extended <i class="down"></i></a>
+    </div>
     </div>
 
     <div id="cv-side-text">
-        If you are an <text class="large-text">employer</text> <br> and would like to request my resume, please use the contact form below.
+        If you are an <text class="large-text">employer</text> <br>
+      a <text class="large-text">startup owner</text> <br>
+      or interested in a&nbsp;<text class="large-text">free</text>&nbsp;trial&nbsp;<text class="large-text">lesson</text> please use the contact form below to get in touch.<br>
+      <br>
+      You can also download my CV (compact and extended version) by hovering over the image on the left.
     </div>
 </div>

@@ -28,18 +28,21 @@ body {
 }
 
 #header-menu a {
+    position: relative;
+    top: -10em;
     color: #FEFFFF;
     font-weight: 300;
     font-size: 1.2rem;
     padding: 1rem 2rem;
     text-decoration: none;
-    transition: all 0.5s;
+    transition: top 1s ease-in-out, color 0.5s ease-in-out, border-top 0.5s ease-in-out;
     border-top:2px solid #13134f;
 }
 
 #header-menu a:hover {
     color: #e14072;
     border-top: 2px solid #e14072;
+    cursor: pointer;
 }
 
 .section {

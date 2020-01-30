@@ -33,14 +33,33 @@
 
 .cv-caption {
     position: absolute;
-    width: 80%;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
     top: 35em;
+    width: 100%;
     transition: all 0.5s;
     font-size: 0.6em;
-    color: #FEFFFF;
-    padding: 1em;
 }
+.cv-caption > a {
+    text-decoration: none;
+    color: #e14072;
+    background-color: #FEFFFF;
+    padding: 0.6em;
+    transition: all 0.5s;
+}
+
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
 #cv-wrapper:hover {
     cursor: pointer;
 }
@@ -49,7 +68,12 @@
     background-color: #13134f70;
 }
 
-/*#cv-wrapper:hover .cv-caption {*/
-/*    top: 20%;*/
-/*}*/
+#cv-wrapper:hover .cv-caption {
+    top: 20%;
+}
+
+.cv-caption > a:hover {
+    background-color: #e14072;
+    color: #FEFFFF;
+}
 
