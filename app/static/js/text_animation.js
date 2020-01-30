@@ -17,7 +17,7 @@ $(document).ready(function () {
         var scroll = $(window).scrollTop();
 
 
-        largeText.each($).wait(100, function () {
+        largeText.each($).wait(150, function () {
              if (0.98*(scroll + viewportHeight) >= $(this).offset().top) {
                 $(this).css({'color': '#13134f', 'top': '0'});
              }

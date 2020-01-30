@@ -76,3 +76,4 @@ jinja2.exceptions.TemplateNotFound: welcome.html
 2020-01-29 19:13:17,624 INFO: Workout App startup [in /Users/danielvaroli/Desktop/personal_website/danielvaroli/app/__init__.py:73]
 2020-01-29 19:30:03,873 INFO: Workout App startup [in /Users/danielvaroli/Desktop/personal_website/danielvaroli/app/__init__.py:73]
 2020-01-29 19:36:18,408 INFO: Workout App startup [in /Users/danielvaroli/Desktop/personal_website/danielvaroli/app/__init__.py:73]
+2020-01-30 10:12:54,310 INFO: Workout App startup [in /Users/danielvaroli/Desktop/personal_website/danielvaroli/app/__init__.py:73]
