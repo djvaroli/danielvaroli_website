@@ -209,6 +209,7 @@ h1 {
     }
 
     #mobile-warning {
+        display: block;
         position: absolute;
         top: 0;
         background-color: #e14072;
