@@ -12,6 +12,9 @@ body {
     font-weight: 300;
 }
 
+#mobile-warning {
+    display: none;
+}
 #banner {
     height: 55rem;
     background-position: 2300px;
