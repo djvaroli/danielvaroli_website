@@ -19,8 +19,14 @@
             {% endfor %}
         {% endif %}
     {% endwith %}
+<!--    <div id="fullscreen-content">-->
+            {% block app_content %}{% endblock %}
+<!--    </div>-->
+<!--    <div id="mobile-content">-->
+<!--        <div id="mobile-form">-->
 
-    {% block app_content %}{% endblock %}
+<!--        </div>-->
+<!--    </div>-->
 {% endblock %}
 
 {% block scripts %}
