@@ -9,7 +9,6 @@
 .project-card-wrapper {
     position: relative;
     flex: 1;
-    flex-shrink: 0;
     flex-basis: auto;
     display: inline-block;
     overflow: hidden;

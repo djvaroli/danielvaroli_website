@@ -4,24 +4,30 @@ $(document).ready(function () {
     var bannerTop= banner.offset().top;
 
     var aboutMe = $('#about_me');
-    var aboutMeTop = aboutMe.offset().top;
-    var aboutMeFirstTextTop = aboutMe.find('.large-text:first-child').offset().top;
 
     var largeText = $('.large-text');
 
     var projectCard = $('.project-card-wrapper');
     // var normalText = $('.normal-text');
 
+    var cvDownload = $('#cv-download');
+
     $(window).scroll(function () {
         var viewportHeight = $(window).height();
         var scroll = $(window).scrollTop();
 
 
-        largeText.each($).wait(150, function () {
-             if (0.98*(scroll + viewportHeight) >= $(this).offset().top) {
+        largeText.each($).wait(50, function () {
+             if (scroll + viewportHeight + 50 >= $(this).offset().top) {
                 $(this).css({'color': '#13134f', 'top': '0'});
              }
         });
+
+        cvDownload.wait(500, function () {
+            if ((scroll + viewportHeight + 50) >= $(this).offset().top) {
+                $(this).show('fade',500);
+             }
+        })
     });
 
     // function callback() {

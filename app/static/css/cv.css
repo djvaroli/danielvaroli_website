@@ -13,12 +13,12 @@
 }
 
 #cv-side-text {
-    width: 55%;
 }
 
 
 #cv-wrapper img {
-    max-height: 20em;
+    max-height: 15em;
+    border-radius: 5px;;
 }
 
 .img-overlay {
@@ -40,14 +40,19 @@
     transition: all 0.5s;
     font-size: 0.6em;
 }
-.cv-caption > a {
+.cv-caption > a, .cv-download-link {
     text-decoration: none;
     color: #e14072;
     background-color: #FEFFFF;
     padding: 0.6em;
     transition: all 0.5s;
+    border: 2px solid #e14072;
 }
 
+#cv-download {
+    display: none;
+    margin-top: 1em;
+}
 i {
   /*border: solid black;*/
   /*border-width: 0 3px 3px 0;*/
@@ -77,3 +82,8 @@ i {
     color: #FEFFFF;
 }
 
+.cv-download-link:hover {
+    background-color: #e14072;
+    color: #FEFFFF;
+    border: 2px solid #FEFFFF;
+}

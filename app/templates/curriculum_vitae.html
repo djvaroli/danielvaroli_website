@@ -1,19 +1,31 @@
 
 <div id="cv-flex-container">
-  <div id="cv-wrapper">
-    <img src="{{url_for('static', filename='img/cv.png')}}">
-    <div class="img-overlay"></div>
-    <div class="cv-caption">
-      <a href="{{ url_for('static',filename='files/daniel_varoli_resume_web.pdf') }}" download>Compact <span style="color: #13134f">&#8595;</span></a>
-      <a href="{{ url_for('static',filename='files/daniel_varoli_resume_web.pdf') }}" download>Extended <span style="color: #13134f">&#8595;</span></a>
+  <div id="cv-side-text">
+    <br>
+    <text class="large-text">Professionalism</text><br>
+    <text class="large-text">Dynamic character</text><br>
+    <text class="large-text">Energy</text><br>
+    <text class="large-text">Passion</text><br>
+    <br>
+    Feel like I can help you or your company? <br>
+    <div id="cv-download">
+       <a class="cv-download-link" href="{{ url_for('static',filename='files/daniel_varoli_resume_web.pdf') }}" download>
+        CV (Compact)
+        <span style="color: #13134f">&#8595;</span>
+      </a>
+      <a class="cv-download-link" href="{{ url_for('static',filename='files/daniel_varoli_resume_web.pdf') }}" download>
+        CV (Extended)
+        <span style="color: #13134f">&#8595;</span>
+      </a>
     </div>
-    </div>
-
-    <div id="cv-side-text">
-        If you are an <text class="large-text">employer</text> <br>
-      a <text class="large-text">startup owner</text> <br>
-      or just looking to get <text class="large-text">in&nbsp;touch</text>, please use the form below.
-      <br><br>
-      You can also download my CV by hovering over the image on the left.
-    </div>
+  </div>
 </div>
+
+<!--  <div id="cv-wrapper">-->
+<!--    <img src="{{url_for('static', filename='img/cv.png')}}">-->
+<!--    <div class="img-overlay"></div>-->
+<!--    <div class="cv-caption">-->
+<!--      <a href="{{ url_for('static',filename='files/daniel_varoli_resume_web.pdf') }}" download>Compact <span style="color: #13134f">&#8595;</span></a>-->
+<!--      <a href="{{ url_for('static',filename='files/daniel_varoli_resume_web.pdf') }}" download>Extended <span style="color: #13134f">&#8595;</span></a>-->
+<!--    </div>-->
+<!--  </div>-->
