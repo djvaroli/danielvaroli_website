@@ -6,6 +6,13 @@ from app.main.forms import ContactForm
 from app.main.email import send_contact_email
 import os
 
+@bp.before_request
+def before_request():
+    if request.url.startswith('http://'):
+        url = request.url.replace('http://', 'https://', 1)
+        code = 301
+        return redirect(url, code=code)
+
 @bp.route('/', methods=['GET', 'POST'])
 def home():
     link_names = ['About Me', 'Projects', 'Curriculum Vitae', 'Contact']
