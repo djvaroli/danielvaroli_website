@@ -8,10 +8,12 @@ import os
 
 @bp.before_request
 def before_request():
-    if request.url.startswith('http://'):
-        url = request.url.replace('http://', 'https://', 1)
-        code = 301
-        return redirect(url, code=code)
+    print('before request')
+    if not os.environ['FLASK_DEBUG']:
+        if request.url.startswith('http://'):
+            url = request.url.replace('http://', 'https://', 1)
+            code = 301
+            return redirect(url, code=code)
 
 @bp.route('/', methods=['GET', 'POST'])
 def home():

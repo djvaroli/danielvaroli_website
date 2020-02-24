@@ -1,6 +1,7 @@
-config.py
 *.key
 *.pem
+config.json
+
 
 # Compiled source #
 ###################

@@ -49,12 +49,11 @@ body {
 }
 
 #icons {
+    display: block;
     position: relative;
+    margin: 0 auto;
     text-align: center;
     top: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 #icons > a {
